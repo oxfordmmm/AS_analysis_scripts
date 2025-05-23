@@ -1,0 +1,30 @@
+name: AS_scripts
+channels:
+  - conda-forge
+  - bioconda
+  - nanoporetech
+  - etetoolkit
+  - plotly
+dependencies:
+  - python>=3.8
+  - nextflow
+  - pandas
+  - openpyxl
+  - seaborn
+  - matplotlib
+  - plotly_express
+  - pip
+  - kraken2
+  - krakentools
+  - kraken2-server
+  - seqtk
+  - seqkit
+  - minimap2
+  - samtools
+  - biopython
+  - ete3
+  - centrifuge-core
+  - kma
+  - pytest
+  - toml
+
