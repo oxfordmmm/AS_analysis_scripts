@@ -232,7 +232,7 @@ process GET_GROUP_READS {
 process SPLIT_READS {
     tag {name + ' ' + group}
     label 'analysis'
-    //publishDir 'split_reads', mode: 'copy'
+    publishDir 'split_reads', saveAs: { filename -> "${name}_${group}.fastq.gz" }, mode: 'copy'
 
     input:
     tuple val(name),  path('file.fastq.gz'), val(group), path('reads.txt')
